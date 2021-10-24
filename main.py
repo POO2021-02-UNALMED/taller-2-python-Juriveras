@@ -11,7 +11,7 @@ class Auto:
     def cantidadAsientos(self):
         cant = 0
         for i in self.asientos:
-            if type(i) == "Asiento":
+            if i != None:
                 cant += 1
         return cant
 
@@ -19,7 +19,7 @@ class Auto:
         if(self.motor.registro != self.registro):
             return "Las piezas no son originales"
         for i in self.asientos:
-            if(type(i) == "Asiento"):
+            if(i != None):
                 if(self.registro != i.registro):
                     return "Las piezas no son originales"
         return "Auto original"
