@@ -10,7 +10,7 @@ class Auto:
 
     def cantidadAsientos(self):
         cant = 0
-        for i in asientos:
+        for i in self.asientos:
             if type(i) == "Asiento":
                 cant += 1
         return cant
